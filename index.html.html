@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genetik Mo'jizalar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* qora */
+      margin: 0;
+      padding: 0;
+      color: #e5ffe5; /* och yashil oq rangda */
+    }
+
+    header {
+      background-color: #004d00; /* chuqur yashil */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #baffc9;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004d00;
+        padding: 10px;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #001a00; /* qoramtir yashil */
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 255, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #004d00;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      color: #a3f7bf; /* yumshoq yashil */
+      margin-bottom: 10px;
+    }
+
+    .toggle-button {
+      background-color: #008000;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .toggle-button:hover {
+      background-color: #00cc66;
+    }
+
+    .content-section {
+      display: none;
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Genetik Mo'jizalar
+  <div class="menu-toggle">&#9776;</div>
+  <nav>
+    <ul>
+      <li><a href="#home">Bosh Sahifa</a></li>
+      <li><a href="#about">Haqqimizda</a></li>
+      <li><a href="#gallery">Galereya</a></li>
+      <li><a href="#scientists">Biolog Olimlar</a></li>
+      <li><a href="#tests">Testlar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="section-title">Genetikaga Oydinlik</div>
+  <button class="toggle-button">Ko‘rsat / Yashir</button>
+  <div class="content-section">
+    <p><strong>Genetika</strong> — biologiyaning bir sohasi bo‘lib, tirik organizmlarning irsiy xususiyatlarini o‘rganadi. U genlar, DNK, RNK, xromosomalar va irsiy axborot uzatish mexanizmlarini chuqur tadqiq etadi. Genetika yordami bilan odamlarning genetik kasalliklari, hayvonlar nasli, o‘simliklar xususiyatlari va boshqa ko‘plab biologik jarayonlar tushuniladi.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">Haqqimizda</div>
+  <button class="toggle-button">Ko‘rsat / Yashir</button>
+  <div class="content-section">
+    <p><strong>Genetik Mo‘jizalar</strong> — yoshlar uchun zamonaviy biologiya va genetika bo‘yicha bilimlarni targ‘ib qilishga bag‘ishlangan. Sayt orqali siz testlar orqali o‘z bilimlaringizni sinashingiz, mashhur olimlar haqida o‘rganishingiz mumkin.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-title">Genetik Galereya</div>
+  <button class="toggle-button">Ko‘rsat / Yashir</button>
+  <div class="content-section">
+    <p><strong>Galereya</strong> bo‘limida quyidagi tushunchalar haqida ma’lumot topasiz:</p>
+    <ul>
+      <li><strong>DNK</strong> — irsiy axborot molekulasi</li>
+      <li><strong>Xromosoma</strong> — genlar to‘plami joylashgan tuzilma</li>
+      <li><strong>Mutatsiya</strong> — genetik axborotdagi o‘zgarish</li>
+      <li><strong>Seleksiya</strong> — foydali belgilarni tanlab olish</li>
+      <li><strong>Transkripsiya</strong> — DNK'dan RNK hosil bo‘lishi</li>
+    </ul>
+  </div>
+</section>
+
+<section id="scientists">
+  <div class="section-title">Mashhur Biolog Olimlar</div>
+  <button class="toggle-button">Ko‘rsat / Yashir</button>
+  <div class="content-section">
+    <ul>
+      <li><strong>Gregor Mendel</strong> — irsiyat qonunlarini aniqlagan. No‘xat o‘simligi ustida tadqiqotlar olib borgan.</li>
+      <li><strong>James Watson va Francis Crick</strong> — DNK spiral tuzilmasini kashf qilgan va Nobel mukofotiga sazovor bo‘lganlar.</li>
+      <li><strong>Rosalind Franklin</strong> — DNK molekulasi tuzilmasini rentgen orqali o‘rgangan, bu orqali DNK modeli yaratilgan.</li>
+      <li><strong>Barbara McClintock</strong> — genlar harakati (transpozitsiya)ni isbotlab bergan. Nobel sovrindori.</li>
+      <li><strong>Charles Darwin</strong> — tabiiy tanlanish orqali evolyutsiya nazariyasini yaratgan buyuk olim.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="tests">
+  <div class="section-title">Biologiyaga Oid Testlar (15 ta)</div>
+  <button class="toggle-button">Ko‘rsat / Yashir</button>
+  <div class="content-section">
+    <ol>
+      <li>Genetika fani nimani o‘rganadi?</li>
+      <li>DNK qanday tuzilishga ega?</li>
+      <li>Irsiyat nima?</li>
+      <li>Gregor Mendel qanday tajribalar o‘tkazgan?</li>
+      <li>Gen nima?</li>
+      <li>Mutatsiya deganda nimani tushunasiz?</li>
+      <li>Ribonuklein kislota (RNK) vazifasi nima?</li>
+      <li>Fenotip va genotip orasidagi farq nima?</li>
+      <li>Qanday omillar gen ifodasiga ta'sir qiladi?</li>
+      <li>Homozigot va geterozigot tushunchasi nimani bildiradi?</li>
+      <li>DNKning replikatsiyasi qanday kechadi?</li>
+      <li>Qanday organizmlar genetik jihatdan modifikatsiyalangan hisoblanadi?</li>
+      <li>Transkripsiya va translatsiya nima?</li>
+      <li>Insonga oid qancha xromosoma mavjud?</li>
+      <li>Genetik kasalliklarning oldini olish usullari qanday?</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  © Jamshidbek
+</footer>
+
+<script>
+  // Tugmalarni ishlatish uchun
+  document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+
+  // Mobil menyu uchun
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
